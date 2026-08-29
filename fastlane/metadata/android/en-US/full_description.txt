@@ -1,0 +1,3 @@
+I tried making a simple small stop motion video, so i made some images and then realized that i couldn't find any app on fdroid that allowed to combine them into a video.
+
+This one-shot vibe coded tool allows you to convert image sequences into a video. It doesn't have any other features and i currently don't plan on implementing more features. hope it is still helpful to someone.

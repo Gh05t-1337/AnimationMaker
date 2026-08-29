@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Animation Maker</string>
+    <string name="add_images">Add images</string>
+    <string name="export_video">Export video</string>
+    <string name="fps_label">Speed: %1$d fps</string>
+    <string name="empty_hint">Tap \"Add images\" to pick photos from your gallery.\nDrag the handle to reorder them.</string>
+    <string name="remove_image">Remove image</string>
+    <string name="drag_handle">Drag to reorder</string>
+    <string name="exporting">Exporting video…</string>
+    <string name="export_success">Saved to Movies/AnimationMaker</string>
+    <string name="export_failed">Export failed: %1$s</string>
+    <string name="need_at_least_two">Add at least 2 images first</string>
+    <string name="permission_needed">Storage permission is needed to save the video</string>
+</resources>

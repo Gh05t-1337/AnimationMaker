@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.AnimationMaker" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/on_surface</item>
+    </style>
+</resources>

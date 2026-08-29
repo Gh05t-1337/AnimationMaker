@@ -1,0 +1,29 @@
+# Example F-Droid build metadata. Adjust CommitId/versions once this is in
+# a real git repo and tagged. See https://f-droid.org/docs/Build_Metadata_Reference/
+Categories:
+  - Multimedia
+License: 0BSD
+SourceCode: https://github.com/Gh05t-1337/AnimationMaker
+IssueTracker: https://github.com/Gh05t-1337/AnimationMaker/issues
+
+AutoName: Animation Maker
+Summary: A tool to convert image sequences into video files
+Description: |
+    Pick photos from your gallery, arrange them into a sequence, choose a
+    playback speed, and export the result as a video.
+
+RepoType: git
+Repo: https://github.com/Gh05t-1337/AnimationMaker
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1
