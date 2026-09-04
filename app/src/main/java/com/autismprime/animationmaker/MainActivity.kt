@@ -1,6 +1,7 @@
 package com.autismprime.animationmaker
 
 import android.Manifest
+import android.content.ActivityNotFoundException
 import android.content.ContentValues
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -57,9 +58,19 @@ class MainActivity : AppCompatActivity() {
         setupFpsControl()
 
         binding.buttonAddImages.setOnClickListener {
-            pickImages.launch(
-                PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)
-            )
+            try {
+                pickImages.launch(
+                    PickVisualMediaRequest(
+                        ActivityResultContracts.PickVisualMedia.ImageOnly
+                    )
+                )
+            } catch (e: ActivityNotFoundException) {
+                Toast.makeText(
+                    this,
+                    "No image picker is available on this device",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         }
 
         binding.buttonExport.setOnClickListener { onExportClicked() }
