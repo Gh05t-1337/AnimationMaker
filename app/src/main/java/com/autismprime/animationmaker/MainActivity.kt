@@ -61,7 +61,8 @@ class MainActivity : AppCompatActivity() {
             try {
                 pickImages.launch(
                     PickVisualMediaRequest(
-                        ActivityResultContracts.PickVisualMedia.ImageOnly
+                        ActivityResultContracts.PickVisualMedia.ImageOnly,
+                        isOrderedSelection = true
                     )
                 )
             } catch (e: ActivityNotFoundException) {
